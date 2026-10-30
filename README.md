@@ -682,6 +682,74 @@ The specialization should therefore be treated as a **foundation for more advanc
 
 ---
 
+# Artificial Intelligence — Learning Hierarchy
+
+```mermaid
+flowchart TD
+    AI["Artificial Intelligence (AI)"]
+    ML["Machine Learning (ML)"]
+    DL["Deep Learning (DL)"]
+
+    AI --> ML
+
+    ML --> SL["Supervised Learning"]
+    ML --> UL["Unsupervised Learning"]
+    ML --> RL["Reinforcement Learning"]
+
+    SL --> REG["Regression"]
+    SL --> CLS["Classification"]
+
+    REG --> REG1["Linear / Polynomial Regression"]
+    REG --> REG2["Decision Tree / Random Forest"]
+    REG --> REG3["Gradient Boosting"]
+
+    CLS --> CLS1["Logistic Regression"]
+    CLS --> CLS2["SVM / KNN / Naive Bayes"]
+    CLS --> CLS3["Decision Trees / Random Forest"]
+
+    UL --> CLU["Clustering"]
+    UL --> DR["Dimensionality Reduction"]
+    UL --> OTHER["Other Methods"]
+
+    CLU --> CLU1["K-Means / DBSCAN"]
+    CLU --> CLU2["Hierarchical / GMM"]
+
+    DR --> DR1["PCA / t-SNE / UMAP"]
+    OTHER --> OTHER1["Autoencoders"]
+    OTHER --> OTHER2["Self-Supervised Learning"]
+
+    RL --> VALUE["Value-Based Methods"]
+    RL --> POLICY["Policy-Based Methods"]
+    RL --> AC["Actor-Critic Methods"]
+
+    VALUE --> V1["Q-Learning / SARSA / DQN"]
+    POLICY --> P1["REINFORCE / Policy Gradients"]
+    AC --> AC1["A2C / PPO / SAC / DDPG"]
+
+    ML --> DL
+
+    DL --> ANN["ANN / MLP"]
+    DL --> CNN["CNN"]
+    DL --> RNN["RNN / LSTM"]
+    DL --> TRANS["Transformers"]
+    DL --> AE["Autoencoders / VAE"]
+    DL --> GEN["GANs / Diffusion Models"]
+    DL --> GNN["Graph Neural Networks"]
+```
+
+## Important Concepts
+
+- **Artificial Intelligence:** The broader field of developing systems capable of intelligent behavior.
+- **Machine Learning:** A subfield of AI where algorithms learn from data or experience.
+- **Supervised Learning:** Learns from labeled datasets.
+- **Unsupervised Learning:** Discovers patterns in unlabeled datasets.
+- **Reinforcement Learning:** Learns through interaction with an environment and reward feedback.
+- **Deep Learning:** A subfield of machine learning that uses multilayer neural networks.
+
+**Important:** Deep Learning is not a separate learning paradigm alongside supervised, unsupervised, and reinforcement learning. Deep learning architectures can be used within all three paradigms.
+
+---
+
 # 📌 Next Steps
 
 After completing the specialization, potential next areas of study include:
